@@ -13,3 +13,6 @@ Small .net core 6 backend with minimalistig angular spa presentation page with a
 - run 'npm i' to install all angular packages
 - run npm build to build the angular app
 - check your proxy.config.js to match your local backend url and port
+
+## Sample file can be found in wwwroot folder
+[wwwroot](https://github.com/vastril4o/vasil-valchev-employees/blob/master/EmployeeWebApp/webapi/wwwroot/Init.csv)
