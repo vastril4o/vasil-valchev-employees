@@ -1,0 +1,27 @@
+﻿<h1 id="tableLabel">Pair of employees</h1>
+<p *ngIf="!projects"><em>Loading... Please refresh once the ASP.NET backend has started.</em></p>
+
+<div class="form-group">
+    <input class="form-control" type="file" accept=".csv" (change)="onFileSelected($event)"/>
+</div>
+
+<br/>
+
+<table *ngIf="projects">
+    <thead>
+        <tr>
+            <th>Employee1 Id</th>
+            <th>Employee2 Id</th>
+            <th>Project Id</th>
+            <th>Days</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let project of projects">
+            <td>{{ project.employee1Id }}</td>
+            <td>{{ project.employee2Id }}</td>
+            <td>{{ project.projectId }}</td>
+            <td>{{ project.days }}</td>
+        </tr>
+    </tbody>
+</table>
